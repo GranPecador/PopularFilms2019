@@ -4,7 +4,7 @@ import com.lk.popularfilms2019.models.MovieModel
 
 interface MoviesView {
     fun showError(textResource:Int)
-    fun setupMoviesList(moviesList:ArrayList<MovieModel>)
+    fun setupMoviesList(moviesList:List<MovieModel>)
     fun startLoading()
     fun endLoading()
 }

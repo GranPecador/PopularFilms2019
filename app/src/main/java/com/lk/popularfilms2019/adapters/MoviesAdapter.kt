@@ -26,7 +26,7 @@ class MoviesAdapter: RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     fun setListener(listener: OnListInteractionListener){
         mListener = listener
     }
-    fun setupMovies(list:ArrayList<MovieModel>){
+    fun setupMovies(list:List<MovieModel>){
         moviesList.clear()
         moviesList.addAll(list)
         notifyDataSetChanged()

@@ -12,7 +12,7 @@ class MoviesPresenter(private var moviesView: MoviesView) {
         MoviesProvider(this).loadMovies()
     }
 
-    fun moviesLoaded(moviesList: ArrayList<MovieModel>){
+    fun moviesLoaded(moviesList: List<MovieModel>){
         moviesView.endLoading()
         if (moviesList.isEmpty()){
             moviesView.showError(R.string.no_loaded)

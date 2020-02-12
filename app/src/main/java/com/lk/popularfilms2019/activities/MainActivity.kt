@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity(), MoviesView,
         helloText.text = getString(textResource)
     }
 
-    override fun setupMoviesList(moviesList: ArrayList<MovieModel>) {
+    override fun setupMoviesList(moviesList: List<MovieModel>) {
         moviesRecycler.visibility = View.VISIBLE
         moviesAdapter.setupMovies(moviesList)
     }
